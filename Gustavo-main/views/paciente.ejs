@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcar Consultas</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #00a6fb;
+            color: #fff;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top:80px;
+        }
+
+        .marcar{
+           position: relative;
+        }
+
+        .form-container input,
+        .form-container button {
+            display: block;
+            width: 95%;
+            margin: 10px 0;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .form-container button {
+            background-color: #00a6fb;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width:405px;
+            
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Marcar Consultas</h1>
+    </div>
+
+    <!-- Create Form -->
+    <form action="/paciente" method="POST" class="form-container">
+        <input id="nomePaciente" name="nomePaciente" placeholder="Nome do Paciente" required>
+        <input type="email" id="nomeMedico" name="nomeMedico" placeholder="Nome do Médico" required>
+        <input type="date" id="horário" name="horario" placeholder="Horário" required>
+        <input type="text" id="especiliadade" name="especialidade" placeholder="Especialidade" required>
+        <button class="Marcar">Marcar</button>
+    </form>
+
+    <ul>
+        <!-- Lista de consultas -->
+    </ul>
+</body>
+
+</html>
